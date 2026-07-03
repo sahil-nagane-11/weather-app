@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Project</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-container">
+            
+            <header class="heading-section">
+                <h1 id="weatherHeading"><img id="headImg" src="images/weather.png">Weather App</h1>
+                <h5 id="weatherInfo">Get the latest weather information</h5>
+            </header>
+            <section class="search-section">
+                <div class="city-Search">
+                    <img id="locationImg" src="images/location.png" alt="City location">
+                
+                    <input id="cityInput" type="text" placeholder="Enter City Name...">
+                    <button type="button" id="searchBtn"><img id="searchIcon" src="images/search-svgrepo-com.svg" alt="Search Icon">Search</button>
+                </div>
+                <p id="searchNote">Press Enter or click Search</p>
+                
+                <h3 id="errRead"></h3>
+            </section>
+                    <!-- Weather Cards Section  -->
+            <section class="weather-cards-section">
+                 <div class="loadingDiv">
+                    <div class="loadDiv"></div>
+                    <div id="load"></div>
+                    <p id="loading">Loading....</p>
+                </div>
+                        <!-- Weather Card Left Side  -->
+                <div class="weather-left">
+                    <h2 id="cityRes">Loading...</h2>
+                    <p id="displayDate">Loading...</p>
+                    <div class="weather-icon-card">
+                        <img id="weatherIcon" src="images/weather.png" alt="weather Img">
+                        <div class="temperature-card">
+                            <p id="temperature">Loading...</p>
+                            <p id="weatherFeel">Loading...</p>
+                            <p id="temperatureIncrease"></p>
+                            <p id="temperatureDecrease"></p>
+                        </div>
+                    </div>
+                </div>
+
+                            <!-- Weather Card Right Side -->
+                <div class="weather-right">
+                    <p id="humidity" class="right-side-items weather-card-text "><img class="right-side-icons" src="images/humidity.png" alt="Humidity">Humidity</p>
+                    <p id="showHumidity" class="right-side-items">Loading...</p>
+                    <p id="windSpeed" class="right-side-items weather-card-text"><img class="right-side-icons" src="images/wind.png" alt="wind icon">Wind Speed</p>
+                    <p id="showWindSpeed" class="right-side-items">Loading...</p>
+                    <p id="tempFeels" class="right-side-items weather-card-text"><img class="right-side-icons" src="images/Feels Like icon.png" alt=" feels icon">Feels Like</p>
+                    <p id="showTempFeels" class="right-side-items">Loading...</p>
+                    <p id="pressure" class="right-side-items weather-card-text"><img class="right-side-icons" src="images/pressure icon.png" alt="pressure icon">Pressure</p>
+                    <p id="showPressure" class="right-side-items">Loading...</p>
+
+                        <!-- Weather Card Bottom  -->
+                         
+                </div>
+                <div class="weather-bottom">
+                    <div class="weather-condition">
+                        <img class="bottom-imgs"  src="images/sunrise.png" alt="sunrise Img">
+                        <p id="sunrise" class="bottom-items weather-card-text">Sunrise</p>
+                        <p id="sunriseTime" class="bottom-items">Loading...</p>
+                    </div>
+                    <div class="weather-condition">
+                        <img class="bottom-imgs" src="images/sunset.png" alt="Sunset Img">
+                        <p id="sunset" class="bottom-items weather-card-text">Sunset</p>
+                        <p id="sunsetTime" class="bottom-items">Loading...</p>
+                    </div>
+                    <div class="weather-condition">
+                        <img class="bottom-imgs"  src="images/visibility icon.png" alt="visibility Img">
+                        <p id="visibilityKm" class="bottom-items weather-card-text">visibility</p>
+                        <p id="visibilityLength" class="bottom-items">Loading...</p>
+                    </div>
+                    <div class="weather-condition wind-direction-div">
+                        <img class="bottom-imgs"  src="images/wind direction icon.png" alt="Wind Direction Img">
+                        <p id="windDirection" class="bottom-items weather-card-text">Wind Direction</p>
+                        <p id="showWindDirection" class="bottom-items">Loading...</p>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="forecast-section">
+                <div class="day1Forecast forecast">
+                    <img class="forecast-icons" src="images/heatwave.png" alt="icon">
+                    <h2 class="days bottom-items">Sun</h2>
+                    <p class="expectedForecast bottom-items">77°/69°</p>
+                </div>
+                <div class="day2Forecast forecast">
+                    <img class="forecast-icons" src="images/sunny.png" alt="icon">
+                    <h2 class="days bottom-items">Mon</h2>
+                    <p class="expectedForecast bottom-items">57°/49°</p>
+                </div>
+                <div class="day3Forecast forecast">
+                    <img class="forecast-icons bottom-items" src="images/storm.png" alt="icon">
+                    <h2 class="days bottom-items">Tue</h2>
+                    <p class="expectedForecast bottom-items">39°/33°</p>
+                </div>
+            </section>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
