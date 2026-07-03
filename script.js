@@ -30,10 +30,9 @@ const sunsetTime = document.getElementById("sunsetTime");
 
 
                 //  API
-const URL="https://api.weatherapi.com/v1/forecast.json";
-// const apiKey="YOUR_API_KEY";
-const apiKey="43237945a7ed48c7b0771606261606";
-let city="Pune";
+const URL = "https://api.weatherapi.com/v1/forecast.json";
+const apiKey = "YOUR_API_KEY";
+let city = "Pune";
 
 const days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
 const months = [
